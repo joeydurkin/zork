@@ -1,0 +1,439 @@
+Spooky House
+Zork++
+1,2
+Classes:
+Gangster:4,6,7
+Burglar:7,2,8
+Investigator:2,8,6
+Bodyguard:1,5,10
+===
+Items:
+RustySpoon,spoon
+5,3
+examine:Orange-brown rust is crumbling off of this old looking spoon.
+break[Disappear]:The thoroughly rusted spoon crumbles to a fine red dust. 
+---
+lighter
+2,1
+examine:A neon green BIC lighter, with about half its fuel left.
+light:The lighter makes sparks, but no flame. Must be out of fuel.
+sniff[Wound(5)]:You feel dizzy, and several brain cells bid you farewell. 
+---
+BrokenPlate,plate,dish
+5,3
+examine:Sharp pieces of what was once a ceramic plate.
+---
+BaseballBat,bat
+10,15
+examine:It's a louisville slugger with a few chips out of it, and a small blood stain.
+swing:The bat feels dangerous in your hands, could be useful.
+knock:You give the bat a few knocks. Feels sturdy.
+clean:You wipe a small blood stain from the bat with your sleeve.
+---
+pistol,gun
+5,8
+examine:Looks like a .45 caliber beretta.
+shoot:The gun appears to be out of ammo.
+reload:You can't seem to find any bullets.
+---
+GasCan,gas,oil,
+10,5
+examine:A mostly empty gas canister with some scum on the handle.
+pour:A few drips of gasoline dribble out of the gas can. 
+drink[Wound(10)]:You feel very dizzy, and think you might vomit.
+sniff[Teleport]:The smell of the gas causes you to hallucinate, and wander to a different place.
+---
+computer,pc
+100000,100000
+examine:Its quite dusty, and the 90s beige CRT monitor makes your modern blood curl.
+open:The computer is password protected.
+unlockit:The computer is opened to spreadsheet of comic books & their prices, totaling over $10,000!
+smash:This computer doesn't seem to run any version of super smash bros.
+---
+note,letter,paper,notebook
+1,1
+examine:Amidst some doodles of Dr. Doom is the phrase "unlockit".
+rip[Disappear]:That's a shame, those doodles were pretty good.
+---
+quarter,coin
+1,2
+examine:Cold hard cash. Looks like a Mississippi quarter.
+swallow[Disappear,Wound(5)]:Gulp! you'll get that back a bit later... probably not worth it though.
+---
+BoxOfComics,box,comics
+35,10
+examine:The side of the taped-shut cardboard box reads "comics" 
+open:Dozens of comics are all wrapped in plastic, carefully preserved.
+---
+StackOfCash,cash,money,moolah,dinero
+2,1
+examine:Dozens of $100 bills wrapped in rubber bands.
+smell[Win]:The sweet smell of profit.
+---
+Blueprints
+3,1
+examine:The blueprints seem to detail the floor plan of the house.
+---
+LawnmowerBlade,blade,mowerblade
+10,20
+examine:The blade has a few dents, but it's still very sharp.
+---
+RatMeat
+4,1
+examine:Raw rat meat. Clean, but still gross.
+eat[Wound(-10)]:Ugh, that did not go down easy. Putting something in your stomach feels good though.
+---
+RatTeeth
+1,3
+examine:Tiny, dull rat teeth. Yuck.
+---
+Painkillers
+1,1
+examine:A small bottle of prescription painkillers.
+swallow[Wound(-15)]:Don't do drugs kids, even though that healed you.
+---
+===
+Shields:
+TrashcanLid,lid
+8,20
+examine:An aluminum trash can lid with a small dent, but it seems sturdy.
+bang:GOOOOOONG!
+---
+Phonebook,book
+4,10
+examine:Why on earth do people keep these around?
+tear[Disappear]:Doing the house owner a favor if you ask me.
+---
+LeadPlate
+20,15
+examine:A slab of pure lead. Heavy as the dickens, but dense enough to block attacks.
+---
+===
+Armor:
+LeatherJacket,jacket
+7,15
+examine:Looks like a U.S. air force bomber jacket, judging by the patches on the sleeves.
+---
+TrenchCoat,coat
+10,25
+examine:A long leather coat with lots of pockets, perfect for shady types.
+---
+KevlarSuit,suit
+15,30
+examine:A fancly looking suit that is dense, due to its kevlar lining.
+---
+===
+Rooms:
+Front Porch
+contents:lighter
+You woke up in the forest hours ago, you wandered to this house. 
+To win, you must find and smell the stackofCash, taking in the aroma 
+of profit.
+You stand on a creaky wooden porch in front of an old brick building. 
+the windows are (mostly) broken, and the building seems to tower
+deep into the sky.
+---
+Living Room
+contents:BrokenPlate,RustySpoon
+An extraordinarily dusty table sits in the corner with some decrepid 
+plateware and a very rotten pizza on it. Cobwebs adorn the walls.
+A spiral staircase in the corner leads upstairs. The front door is 
+ajar on one wall, and another equally creaky looking door sits on another.
+---
+Alley
+contents:BaseballBat,TrashcanLid
+A narrow alleyway stretches out in front of you. It is poorly lit, but
+you can see some trash cans, and a rope hanging from the side of one of
+the buildings.
+---
+Roof
+The bitter evening wind whips through your hair as you peer into the 
+darkness behind the building you stand on. You can make out some trees
+in what appears to be a small forest, but nothing else. A rope hangs from
+the edge of the rooftop, and a small hatch in the roof sits next to you. 
+---
+Bedroom
+contents:pistol
+You enter the bedroom. Your heart pounds in your chest as you scan the
+dimly lit room. There's a bed in the center of the room with a torn 
+red dress laying across it. A .45 pistol sits on the bedside table.
+There are stairs leading down, a small hatch on the ceiling with no 
+way to get to it, and what appears to be a door to a bathroom on the
+wall at the foot of the bed.
+---
+Bathroom
+contents:Painkillers
+The bathroom seems too clean, given how filthy the rest of the place
+is. The only exception is a hairline crack through the mirror above 
+the sink. There is a closet next to the toilet with an unusually 
+narrow door. 
+---
+Closet
+contents:LeatherJacket
+You manage to wedge yourself through the narrow door, and the closet 
+actually opens up a fair amount once inside. A leather jacket is hanging
+next to you, upon moving it you see that there is a hatch in the floor...
+you peer down the hatch. There is no ladder, and it is far too dark to
+see more than a foot or two down. 
+---
+Secret Office
+contents:computer,note
+A gaping hole sits in the center of the ceiling. Two small flourescent 
+lights cut through the darkness to light up a tiny office. There is
+a desk with an old computer and a partially crumpled note on it. The 
+walls that don't make up the corner where the desk sits each have a 
+door on them.
+---
+Vault
+contents:quarter
+A long hallway sprawls before what looks just like a bank vault door 
+from the movies. The vault door is slightly ajar, so you enter with ease. 
+Much to your disappointment, there are no massive piles of money here.
+A crudely dug tunnel catches your eye from the corner of the room.
+---
+Greenhouse
+contents:GasCan
+You stand in a small, cramped greenhouse. Long since deceased produce
+is strewn about, creating an unbearable stench that makes your eyes water. 
+---
+Basement
+contents:BoxOfComics
+You climb down the stairs into a disappointingly boring basement. There
+are some boxes, one of them looks like it is labeled "Comics".
+---
+Backyard
+A small backyard enclosed by a brick wall, with a gate on one side.
+The grass is yellow and dead, crunching beneath your feet as you walk. 
+A small shed sits in the corner of the yard.
+---
+Shed
+contents:LawnmowerBlade
+The moonlight streams through the single window of this tiny shed. It
+illuminates a small rack for tools, although it is empty. There is a 
+taken-apart lawnmower in the corner, which looks like it hasn't worked
+in ages.
+---
+Field
+You stand in a large field that seems to stretch for miles in front of you.
+The grass is overgrown, at it reaches up to your waist. There is a manhole 
+cover next to you, adjacent to the brick wall enclosing the house's backyard.
+---
+Sewer
+A dark sewer stretches out before you, illuminated only by the moonlight
+pouring through the manhole above you. You spot a red arrow on the wall,
+pointing to your left. 
+---
+Deep Sewer
+You travel deeper into the sewer, knee deep in heaven knows what. You round 
+several corners and finally see light, pouring through a small grate in the 
+ceiling.
+---
+Meeting Room
+contents:Blueprints
+You stand in a small, dimly lit room. A large table before you has dozens
+of papers on it, including maps, photos, and notes with incomprehensible 
+writing on them.
+---
+Rolls Royce
+You climb into the backseat of the car. The keys are still in the ignition,
+but the seats are covered in pollen, and it looks like a small family of
+birds has made a home of the passenger's seat.
+---
+Garage
+contents:TrenchCoat
+You stand in a small garage, dimly lit by two flourescent lights. A fridge
+in the corner sits with its door wide open, letting a rather putrid stench 
+engulf the room. The door from the garage to the house is completely boarded
+up. odd.
+---
+Kitchen
+contents:Phonebook
+The kitchen is utterly disgusting. The countertop is riddled with dead bugs, 
+and a microwave in the corner has a broken window, and crusty buttons. Thankfully
+the fridge is closed, surely containing some foul odors.
+---
+===
+Exits:
+Front Porch
+n
+Living Room
+---
+Living Room
+s
+Front Porch
+---
+Front Porch
+w
+Alley
+---
+Alley
+e
+Front Porch
+---
+Living Room
+u
+Bedroom
+---
+Bedroom
+d
+Living Room
+---
+Living Room
+e
+Basement
+---
+Basement
+w
+Living Room
+---
+Alley
+u
+Roof
+---
+Roof
+w
+Alley
+---
+Roof
+d
+Bedroom
+---
+Bedroom
+e
+Bathroom
+---
+Bathroom
+w
+Bedroom
+---
+Bathroom
+s
+Closet
+---
+Closet
+n
+Bathroom
+---
+Closet
+d
+Secret Office
+---
+Secret Office
+s
+Vault
+---
+Vault
+n
+Secret Office
+---
+Secret Office
+e
+Greenhouse
+---
+Greenhouse
+w
+Secret Office
+---
+Vault
+d
+Alley
+---
+Greenhouse
+e
+Backyard
+---
+Backyard
+w
+Greenhouse
+---
+Backyard
+n
+Shed
+---
+Shed
+s
+Backyard
+---
+Backyard
+e
+Field
+---
+Field
+w
+Backyard
+---
+Field
+d
+Sewer
+---
+Sewer
+u
+Field
+---
+Sewer
+s
+Deep Sewer
+---
+Deep Sewer
+n
+Sewer
+---
+Deep Sewer
+u
+Meeting Room
+---
+Meeting Room
+d
+Deep Sewer
+---
+Alley
+n
+Rolls Royce
+---
+Rolls Royce
+s
+Alley
+---
+Front Porch
+e
+Garage
+---
+Garage
+e
+Front Porch
+---
+Living Room
+w
+Kitchen
+---
+Kitchen
+e
+Living Room
+---
+===
+NPCs:
+Rat:
+move/follow:1,0
+weapon:RatTeeth
+inventory:RatMeat
+stats:1,2,2
+current room:Kitchen
+dialogue:Squeak!
+score:5
+hostility:-1.0
+health:30
+---
+MafiaBoss:
+move/follow:0,1
+weapon:BrassKnuckles
+shield:LeadPlate
+Armor:KevlarSuit
+inventory:StackOfCash
+stats:6,6,6
+current room:Meeting Room
+dialogue:How did you find my lair?? GRRRR... you're toast!
+score:20
+hostility:-1.0
+health:
+---
+===

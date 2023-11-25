@@ -1,0 +1,621 @@
+A Friday Night in Fred
+Zork++
+1,2
+Classes:
+Big ol nerd:8,5,4
+Future professor:4,8,5
+Student athlete:5,4,8
+===
+Items:
+broom
+3,5
+examine:It appears brand-new, as if never used.
+use[Wound(2)]:The act of cleaning physically hurts you.
+---
+paddle
+2,4
+examine:It's missing the rubber faces.
+---
+ball
+1,0
+examine:It has a dent from someone stepping on it. Careless!
+eat[Wound(-4),Disappear]:It actually tasted kind of nice!
+throw[Drop]:It bounces and rolls irregularly.
+---
+40,beer,bottle
+5,0
+examine:It's a warm Miller High Life that you found in the shower. Yuck.
+drink[Transform(emptyBottle),Wound(5)]:Gross! Like drinking a loaf of bread.
+dump[Transform(emptyBottle),Score(1)]:Your parents would be so proud.
+empty[Transform(emptyBottle),Score(1)]:Your parents would be so proud.
+---
+emptyBottle,bottle
+2,1
+examine:It has a little bit of warm foam on the bottom.
+drink[Die]:The foam was so disgusting, you threw up your stomach.
+break[Transform(brokenBottle)]:Now that's a viable weapon!
+---
+brokenBottle,bottle
+2,10
+examine:It is sharp and menacing.
+break[Disappear,Wound(3)]:Might need a couple stitches, genius.
+---
+moldySandwich,sandwich
+3,1
+examine:No clue what kind of sandwich it was, but the mold has so many colors!
+eat[Transform(moldyHalfSandwich),Teleport,Wound(-5)]:Your mind feels as fuzzy as the mold.
+---
+moldyHalfSandwich,sandwich
+2,1
+examine:No clue what kind of sandwich it was, but the mold has so many colors!
+eat[Transform(lastMoldyBite),Teleport,Wound(-5)]:Your mind feels as fuzzy as the mold.
+---
+lastMoldyBite,sandwich
+1,1
+examine:No clue what kind of sandwich it was, but the mold has so many colors!
+eat[Disappear,Teleport,Score(1),Wound(-5)]:Your mind feels as fuzzy as the mold.
+---
+toilet,throne
+999,0
+examine:It's beyond disgusting.
+clean:With every drop you wipe up, two more appear. It's futile.
+flush[Wound(2)]:A deafening explosion of sound comes out of the bowl, it hurts!
+---
+shower
+999,0
+examine:The ground is about 85% hair at this point. It smells like pee here.
+use:You're less clean than you were when you went in.
+---
+squirrelCorpse,phillip,phil,squirrell
+2,5
+examine:Everything but the bones have rotted away.
+eat[Wound(7)]:It's all fun and games until you choke on squirrell bones.
+bury[Score(1),Disappear]:How respectful of you!
+---
+tidePod
+1,5
+examine:Its bright colors and squishy texture invite you to eat it.
+eat[Wound(5),Disappear,Score(1)]:Your stomach burns but at least you got attention from Internet strangers!
+---
+cigaretteButt
+1,1
+examine:A green-sounding voice whispers "Butts are litter too..."
+eat[Disappear,Wound(-5)]:You feel good about helping the environment.
+---
+speaker
+5,5
+examine:It's a bluetooth speaker whose main function is to draw attention.
+break[Score(1)]:Good job, rock n' roll is corrupting a generation!
+---
+raccoonCorpse,raccoon
+5,5
+examine:Upon further inspection, this rabies-infected raccoon has a beautiful pelt!
+skin[Transform(raccoonHat)]:You used the pelt to make a SWEET hat!
+---
+theseHands
+0,10
+examine:You wouldn't want to catch theseHands!
+---
+gasoline,gas,fuel,petrol
+2,5
+examine:Ooh - it's premium!
+drink[Wound(-5),Disappear]:Now you're all gassed up!
+---
+atm
+999,0
+examine:Someone's bank account is logged in! It says it's Jeff Bezos?
+use[Transform(money),Score(1)]:Cash is flying out at incredible speeds.
+---
+chips,takis
+2,1
+examine:THEY are fuego Takis. YOU are drooling.
+eat[Wound(-10),Disappear]:The whole bag is gone in a flash.
+---
+soda,DrPepper
+3,1
+examine:It's an ice-cold Dr. Pepper.
+drink[Wound(-10),Disappear):It's delicious, and leaves you wanting more.
+---
+bullWhip,whip
+5,-10
+examine:"Hurts so good" is inscribed on the handle.
+crack:You hear the Indiana Jones theme play softly, as if from very far away.
+---
+bostonCreme
+2,1
+examine:The dough is soft, and this holeless donut looks delectable.
+eat[Wound(-10),Disappear]:The creme fills your mouth and heart with joy.
+---
+rainbowSprinkles
+2,1
+examine:The surface of this donut is all but sparkling.
+eat[Wound(-10),Disappear]:The mix of textures is divine.
+---
+blueberryCake
+3,1
+examine:This is a BEAST of a donut, the heaviest of them all.
+eat[Wound(-10),Disappear]:You feel dense.
+---
+saliva
+1,5
+examine:It tastes like the inside of your mouth, so yeah, it's yours.
+drink[Disappear]:Oh, gross!
+clean[Disappear,Score(1)]:Very responsible!
+---
+heartOfConfederacy
+1,10
+examine:It's smaller and more wrinkled than you thought... looks like a raisin.
+eat[Win]:You chew, swallow, and forever destroy the Confederacy!
+---
+musket,gun,bigBob
+10,15
+examine:It's a bayonetted, Civil War era musket, inscribed "Big Bob"
+shoot:Woah! Watch it!
+---
+ring
+1,12
+examine:Its exquisitely cut diamond will make your shiners even shinier.
+---
+soup
+2,2
+examine:"examine soup" ... really? You're spending this adventure staring at soup?
+eat[Wound(-10),Disappear]:It warms both your belly and soul.
+---
+taco
+2,2
+examine:It's wrapped in a piece of paper that says "Taco Bell. Something wrong?"
+eat[Wound(-10),Disappear]:America loves tacos almost as much as it hates Mexico.
+---
+sliceOfPizza,pizza,slice
+4,2
+examine:One slice is the size of your whole body!
+eat[Wound(-999),Transform(note),Score(1)]:A Union-dressed civil war fanatic busts in, hands you a note, and disappears.
+---
+note,plotTwist
+0,0
+examine:It reads "Now your hunger for the heart of the Confederacy has awakened."
+read:It reads "Now your hunger for the heart of the Confederacy has awakened."
+---
+raft,boat
+999,0
+examine:It looks abandoned but like it could still float.
+ride[Disappear,Die]:The rapids were too intense for you and the raft.
+---
+===
+Shields:
+trashCanLid,lid
+10,10
+examine:Someone painted Captain America's shield pattern on it. Sick!
+throw[Drop]:It flies like a frisbee.
+---
+iciness,swagger
+5,15
+examine:It makes you so cool, nobody can touch you.
+---
+money,cash
+10,20
+examine:All of Jeff Bezos' money elevates your economic status, making you untouchable.
+spend:Couldn't make a dent if you tried.
+burn:Big Daddy Bezos does this for fun, you still have more.
+---
+crown
+12,30
+examine:Its bright gold and fantastic jewels are literally blinding to opponents.
+---
+===
+Armor:
+dirtyClothes,clothes
+8,20
+examine:Hardened after months of sweat, these clothes form a protective layer.
+clean[Transform(cleanClothes),Score(1)]:Everyone around you breathes a sigh of relief.
+---
+cleanClothes,clothes
+7,15
+examine:They are still warm from the dryer.
+---
+leatherSuit
+12,50
+examine:It's black, shiny, and provides all but full body coverage.
+---
+fakeID
+1,20
+examine:Hiding behind a fake identity reduces damage that can be done to you.
+confiscate[Score(1),Disappear]:The right thing to do.
+---
+cowboyBoots,boots
+8,25
+examine:They are made of snakeskin, and have tassles galore.
+---
+===
+Rooms:
+Dorm room
+contents:dirtyClothes,broom
+You are standing in your freshman year room. Having never lived away from home,
+you have lived like a pig in a sty. Your dirty clothes have sat so long that
+they could form a hardened, protective shell for you. You can feel within the 
+deepest depths of your soul that a slice of Benny Vitali's pizza would change 
+your life.
+---
+Russell Hall
+contents:paddle,ball
+The lobby is dimly lit, and it reeks of freshman body odor from all the stairs
+with bitter notes from upperclassmen jealously of the new AC units.
+---
+Bathroom
+contents:40,toilet,shower,trashCanLid
+If you thought your room was bad, this is worse. The cleaning staff went on
+strike long ago. The toilet seats are wet, the walls are wet, the ground is wet,
+everything is wet. The trashcans are overflowing with personal trash.
+---
+Stairs
+contents:squirrelCorpse
+The fresh air feels nice. There is a tree with branches overhead, and shoes
+hanging by their laces from them. You are far too tired to climb the rest of
+the top of the stairs.
+---
+Basement
+contents:tidePod
+The basement is home to the laundry room. Rarely used, yet somehow, all the
+machines are taken. Clothes sit on top of the machine in sad, forgotten heaps.
+The vending machine in the hallway is all but picked clean.
+---
+Parking lot
+There are no empty parking spaces because there are never any empty parking
+spaces. There are rowdy, soon-to-be dropout hooligans smoking cigs and blasting
+music of The Strokes.
+---
+Dumpster
+It's dark and it smells, well, like a dumpster. What did you expect?
+---
+Marshall Hall
+It is unfamiliar, not as fun, and worst of all, farther down the hill than
+Russell. Best leave.
+---
+William and Sunken
+The cars whizz by, not yielding to anyone, let alone you. The UMW sign stands
+in the corner. Nifty, you think.
+---
+William and Littlepage
+contents:gasoline,atm
+The Citgo gas station stands on this corner. The high gas prices fill your heart
+with sadness. The stranger of the Fredericksburg locals occupy this parking lot.
+---
+Citgo
+contents:chips,soda
+The whir and white light of the wall refrigerators are the most appealing part 
+of the store. There is a hyper-sexualized wall decal of Dick Cheney holding some
+Coronas. Oddly, it makes you want to find your beach®.
+---
+Dungeon
+contents:leatherSuit,bullWhip
+Remember that scene from Pulp Fiction? Yeah, it's just that. Good luck getting
+out of this one!
+---
+William and Kenmore
+The sweet smell of donuts of donuts mixes with the enticing aroma of Mexican
+food, and wafts its way into your sinuses. The resulting combination is
+literally coming to life!
+---
+Sugar Shack
+contents:bostonCreme,rainbowSprinkles,blueberryCake,saliva
+The assortment of donuts in the display case seem to almost glow. You think
+they are impeccable. As the saliva drips down your chin, it begins to pool at
+your feet. The cashier seems largely unphased, it must be normal.
+---
+Soup and Taco II
+It's deserted. You double check the hours and read "Closed at all times
+convenient." You are filled with disappointment.
+---
+Down the road
+In this nondescript area, all you feel is the pain of your feet and ache of your
+legs as you make this long, arduous trek.
+---
+Confederate Cemetery
+A fog rolls in among the tombstones. The sound of the cars, the wind, and all
+of the world outside fades away. It's cold now, and your steady breathing is
+the only sound you hear. Suddenly, with a flash and a horse's neigh, the Ghost
+of Robert E. Lee appears!
+---
+William and Caroline
+This is the heart of the city. The bustling square has hundreds of thousands of
+people. The stores are skyscrapers, the billboards are gigantic. The lights are
+dazzling. You are awestruck by this city that never slee-
+No, my mistake, that's Times Square. Downtown Fredericksburg is ok, I guess.
+---
+Crown Jewelers
+contents:ring
+There are arguably too many shiny objects here. Even the slightest amount of
+light is reflected and brilliantly magnified by all of the exquisitely cut
+diamonds. The light and beauty is unbearable, you must avert your eyes.
+---
+Caroline and Hanover
+There is a light breeze, and the air is warm. The two stars still visible
+despite all the light pollution are shining brightly. People seem happy, you 
+think you might jsut be happy too. Neato, enough of that, moving on.
+---
+Soup and Taco Etc
+contents:soup,taco
+Delicious food is being pushed to mostly happy customers. It's a small, homey
+restaurant. There is a large mirror on one wall that half of the people are
+checking themselves out in at any given moment.
+---
+Benny Vitali's
+contents:sliceOfPizza
+The interior is dark. You feel like you've made it. There is a cone of light
+coming from the heavens in the center of the room. It illuminates a pedestal,
+placed just for you.
+---
+The River
+contents:raft
+It must have rained recently, and rained a lot, because the usually calm river
+is roaring. White capped waves are plentiful. There's a grizzly bear on the
+opposite shore catching salmon with its mouth. You feel as if you're watching
+a nature documentary or extreme sports video.
+---
+===
+Exits:
+Dorm room
+s
+Russell Hall
+---
+Russell Hall
+n
+Dorm room
+---
+Stairs
+e
+Russell Hall
+---
+Russell Hall
+w
+Stairs
+---
+Bathroom
+w
+Russell Hall
+---
+Russell Hall
+e
+Bathroom
+---
+Russell Hall
+d
+Basement
+---
+Basement
+u
+Russell Hall
+---
+Basement
+s
+Parking lot
+---
+Parking lot
+n
+Basement
+---
+Parking lot
+w
+Dumpster
+---
+Dumpster
+e
+Parking lot
+---
+Parking lot
+s
+Marshall Hall
+---
+Marshall Hall
+n
+Parking lot
+---
+Parking lot
+e
+William and Sunken
+---
+William and Sunken
+w
+Parking lot
+---
+William and Sunken
+e
+William and Littlepage
+---
+William and Littlepage
+w
+William and Sunken
+---
+William and Littlepage
+n
+Citgo
+---
+Citgo
+s
+William and Littlepage
+---
+Citgo
+d
+Dungeon
+---
+William and Littlepage
+e
+William and Kenmore
+---
+William and Kenmore
+w
+William and Littlepage
+---
+William and Kenmore
+n
+Sugar Shack
+---
+Sugar Shack
+s
+William and Kenmore
+---
+William and Kenmore
+s
+Soup and Taco II
+---
+Soup and Taco II
+n
+William and Kenmore
+---
+William and Kenmore
+e
+Down the road
+---
+Down the road
+w
+William and Kenmore
+---
+Down the road
+n
+Confederate Cemetery
+---
+Confederate Cemetery
+s
+Down the road
+---
+Down the road
+e
+William and Caroline
+---
+William and Caroline
+w
+Down the road
+---
+William and Caroline
+n
+Crown Jewelers
+---
+Crown Jewelers
+s
+William and Caroline
+---
+William and Caroline
+e
+The River
+---
+The River
+w
+William and Caroline
+---
+William and Caroline
+s
+Caroline and Hanover
+---
+Caroline and Hanover
+n
+William and Caroline
+---
+Caroline and Hanover
+e
+The River
+---
+The River
+s
+Caroline and Hanover
+---
+Caroline and Hanover
+w
+Soup and Taco Etc
+---
+Soup and Taco Etc
+e
+Caroline and Hanover
+---
+Caroline and Hanover
+s
+Benny Vitali's
+---
+Benny Vitali's
+n
+Caroline and Hanover
+---
+===
+NPCs:
+Raccoon:
+move/follow:0,0
+inventory:moldySandwich
+stats:7,2,1
+current room:Dumpster
+dialogue:Purrchittergrowlsnarlhisswhimperscreech!
+score:5
+hostility:-1.0
+health:
+---
+Cigboy:
+move/follow:0,1
+weapon:theseHands
+shield:iciness
+inventory:cigaretteButt,speaker
+stats:4,5,4
+current room:Parking lot
+dialogue:As long as it's still mostly dudes at the party, it's ok.
+score:5
+hostility:-1.0
+health:
+---
+Local:
+move/follow:0,1
+armor:cowboyBoots
+stats:5,4,4
+current room:William and Littlepage
+dialogue:I know I just met you, but FYI, my ex-girlfriend died while I was in prison.
+score:4
+hostility:1.0
+health:
+---
+citgoWorker:
+move/follow:0,1
+armor:fakeID
+stats:3,4,6
+current room:Citgo
+dialogue:Just buy something and get out.
+score:3
+hostility:0.0
+health:
+---
+sugarShackWorker:
+move/follow:0,1
+inventory:bostonCreme,rainbowSprinkles,blueberryCake
+stats:5,5,5
+current room:Sugar Shack
+dialogue:Please tip me!
+score:3
+hostility:0.0
+health:
+---
+crownJewelersWorker:
+move/follow:0,1
+shield:crown
+stats:2,8,6
+current room:Crown Jewelers
+dialogue:I'll protect my crown with my life!
+score:5
+hostility:-1.0
+health:
+---
+angryCustomer:
+move/follow:0,1
+stats:7,7,7
+current room:Soup and Taco Etc
+dialogue:WHY are there two and WHY isn't the first one called 'Soup and Taco I'?!
+score:5
+hostility:-1.0
+health:
+---
+ghostOfRobertELee:
+move/follow:0,0
+weapon:musket
+inventory:heartOfConfederacy
+stats:10,12,9
+current room:Confederate Cemetery
+dialogue:Make America great again!
+score:10
+hostility:-1.0
+health:
+---
+===

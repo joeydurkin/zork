@@ -1,0 +1,543 @@
+Dwayne "The Rock" Johnson
+Zork III
+1,8
+Classes:
+Tapeworm:5,7,9
+Sandworm:9,6,6
+Flobberworm:7,9,5
+That_giant_worm_from_Tremors:10,10,10
+===
+Items:
+loose_tooth,tooth
+5,5
+examine:It looks kinda sharp.
+pull:The tooth wiggles a bit.
+hit[Wound(2)]:Teeth are hard.
+eat:The tooth will not fit in you mouth. That's probably a good thing given your size and the sharpness of the tooth.
+---
+nose_hair,hair
+3,1
+examine:It is a short hair.
+pull:The Rock screams in pain!
+grab:The hair stretches like a guitar string and you begin playing "Stairway to Heaven."
+eat[Wound(1),Disappear]:Don't do that! You might get a hairball!
+---
+sleeping_pill,pill
+3,2
+examine:It is not the right dosage for someone your size.
+eat[Die]:You slowly fall asleep. Meanwhile a tiny Dwayne "The Rock" Johnson begins burrowing his way into your brain.
+---
+gold_filling,filling
+100
+examine:It can't be removed.
+pull:The gold filling will not budge.
+eat:You can't eat this.
+---
+yummy_brain_goodness,brain,brains
+10
+examine:This is what you are here for!
+eat[Win]:You burrow through his brain matter like a rotten apple, laying eggs in your wake. Soon your Rock-worm hybrid babies will emerge. First the Rock, then the world!
+devour:I like your enthusiasm but you could just type "eat."
+---
+saliva,spit
+3,1
+examine:Gross!
+drink[Wound(-10)]:This hydration will allow you to persist through your mission.
+eat:This is a liquid, not a solid. Silly worm.
+---
+toy_car,car
+100
+examine:It looks like a Dodge Charger.
+drive[Teleport]:You get in and hit the gas. The little orange car jumps over a gap in the intestines as a Waylon Jennings song suddenly begins playing.
+eat:This is too big to eat. You are not a giant like the Rock.
+---
+paper_clip,clip
+3,10
+examine:It looks sharp. Maybe you could straighten it.
+straighten[Score(10),Transform(paper_clip_sword)]:You hold aloft your magic paper clip. Lightning surrounds you. You yell "By the power of grey matter, I have the power!!!"
+eat:Just because the Rock eats random items like a goat, it does not mean you can.
+---
+paper_clip_sword
+3,20
+examine:Poke things and they die.
+---
+sword_in_the_kidney_stone
+100
+examine:Try to pull it.
+pull[Transform(excalibur),Wound(-10),Score(10)]:Light surrounds you as you pull the magical sword from the kidney stone. You are the one true king worm!
+---
+excalibur
+5,50
+examine:The most dangerous weapon in the game.
+eat[Die]:You are not a talented sword swallower.
+---
+bacon_sword
+5,20
+examine:Kevin died so you may live.
+eat[Disappear,Wound(-20)]:You feel a little guilty about eating your friend Kevin.
+---
+tequila
+1,1
+examine:Don't drink kids. Also, don't drink, kids.
+drink[Disappear,Wound(2)]:It burns!
+---
+note
+1,1
+examine:It says something important.
+read[Score(5),Disappear]:Sacrifice will make your path to victory easier.
+---
+antacid
+6,1
+examine:It could soothe ... something.
+eat[Disappear]:Your stomach feels better, but maybe you should have given this to someone else.
+---
+wand_of_healing,wand
+2,-5
+examine:Hit your friends or yourself.
+wave:Stop hitting yourself! Stop hitting yourself!
+---
+bile
+1,1
+examine:Gross!
+drink[Wound(-1),Disappear]:It quenches your thirst but leaves a bad taste in your mouth.
+eat:This is a liquid, not a solid. Silly worm.
+---
+dirty_litter_box
+100,1
+examine:You should clean up after these stinky cats.
+eat[Die]:What did you think was going to happen?
+clean[Transform(wand_of_healing)]:Maybe you thought this would make the cats less hostile. It doesn't. Cats are unappreciative.
+scoop[Transform(wand_of_healing)]:Maybe you thought this would make the cats less hostile. It doesn't. Cats are unappreciative.
+---
+pool_noodle
+2,5
+examine:It hits like a wet noodle.
+---
+giant_water_slide
+100,1
+examine:Looks fun, but we are not here to play games!
+ride:Wheeeeee! The Rock's tears give me great joy!
+---
+laser
+3,10
+examine:I thought it would be more powerful.
+---
+another_note
+1,1
+examine:Some type of clue.
+read[Score(5),Disappear]:Roses are red. Violets are bitter. If you want a healing weapon, you must scoop cat litter.
+---
+===
+Shields:
+bacon_shield
+5,75
+examine:Kevin died so you may live.
+eat[Disappear,Wound(-20)]:You feel a little guilty about eating your friend Kevin.
+---
+booger
+2,20
+examine:Gross!
+pick:You can pick your nose, and you can pick your enemies, but you shouldn't pick your enemy's nose!
+eat[Disappear,Wound(10)]:What is wrong with you? This should not even be an option!
+---
+life_preserver
+3,30
+examine:It doesn't offer a lot of protection but it is better than nothing.
+---
+===
+Armor:
+bacon_armor
+5,75
+examine:Kevin died so you may live.
+eat[Disappear,Wound(-20)]:You feel a little guilty about eating your friend Kevin.
+---
+snorkle
+3,30
+examine:It might protect your face.
+---
+tiny_submarine_armor
+5,40
+examine:A metal shell offers protection for your worm body.
+---
+===
+Rooms:
+Dwayne "The Rock" Johnson's pillow
+contents:sleeping_pill
+You are a parasitic worm with a taste for brains. You see the shimmer of moonlight glimmering off of The Rock's bulging muscles and shiny head. You are not sure how you got here on the Rock's sweat-soaked pillow but the warm air from his mouth invites you in.
+---
+Mouth
+contents:loose_tooth,gold_filling,saliva
+The Rock's perfect teeth nearly glow in the dark, and the smell of last night's dinner is still strong. But it is not cheeseburger you crave. You can only be satiated by that sweet taste of brains.
+---
+Esophagus
+The slimy coating of protein shakes in The Rock's throat reminds you of your childhood in the cocoon with your squirming brethren. Your anger grows as you remember how they were crushed under the
+foot of a muscular, tatooed giant. Soon you will get your revenge.
+---
+Stomach
+contents:paper_clip,antacid
+The acid churns, stinging your skin. The bacon from the cheeseburger is tempting, but alas it is no substitute for those sweet, sweet brains. A bleeding ucler offers a third option to the normal ways out.
+---
+Small intestine
+contents:toy_car
+Small finger-like villi line the walls of this narrow tunnel. The Rock's rock hard abs and partially digest food make it difficult to move. This seems like a really bad direction to be going.
+---
+Large intestine
+So you are really doing this? There is no turning back now as the gurgling noises and shaking gets worse.
+---
+Porcelain bowl of death
+The brightness surrounds you. There is a screaming like you have never heard before. The sound! The smell! The taste! The rush of the whirlpool carries you away. Type d to go back to the beginning.
+---
+Nose
+contents:booger,nose_hair
+You stand in a slimy, hair-filled cave. You can smell what the Rock was cooking.
+---
+Windpipe
+The wind rushes in and out as The Rock begins to sing "You're Welcome" from "Moana." You think to yourself, "How can one man have so much talent?"
+---
+Lungs
+The Rock's lungs are like caverns. You pause to enjoy the fresh air and to think heavily about what you plan on doing. Sure, brains are delicious, but how can you deprive the world of the star of numerous masterpieces like "The Scorpion King," "Rampage,""Skyscraper," "Doom," and "The Tooth Fairy."
+---
+Heart
+The sound is deafening as the heart of this beast pounds like a drum from "Jumanji: Welcome to the Jungle." 
+---
+Bloodstream
+The river of blood (and tequila) carries you away like a water slide at an amusement park. The sweet, sweet, sweet taste of brains is only a few steps away.
+---
+Brain
+At last, you shall feast! ... But wait! You must defeat a final boss who also is trying to destroy the Rock's brain. You must kill him to get the yummy brains. 
+---
+Nostril
+There is a sudden gasp of air and an explosion. Your lifeless body is hurled through the air and sticks to the wall. Type d to go back to the beginning. 
+---
+????
+contents:dirty_litter_box
+The map maker doesn't know a lot about human anatomy and is running out of ideas for rooms. So here is a room full of angry cats.
+---
+Gallbladder
+The small room is filled with a green/yellow goo (bile). It looks and smells like Shrek exploded in here.
+---
+Eyes
+The Rock's beautiful brown eyes twinkle in the darkness. You are nearly hypnotized.
+---
+Tear ducts
+contents:giant_water_slide
+The Rock's not crying! You're crying!
+---
+Kidneys
+contents:sword_in_the_kidney_stone
+The room consists of two bean-shaped organs that filter waste from the blood. A few large stones line the edges of the room. They look painful.
+---
+Liver
+contents:tequila
+Between the protein shakes, years of body slams, and the Rock creating his own brand of Tequila, this is one hard-working organ. Did you know the liver is the size of a football? Did you know the Rock played football at the University of Miami? Did you know the Rock owns a farm near Charlottesville? This isn't really going anywhere.
+---
+Bladder
+contents:life_preserver,snorkle,pool_noodle
+Yay! It's like a giant swimming pool! ... Except the entire pool is a warm spot. A "Baywatch" movie poster hangs on the wall. Unfortunately for you, there is only one way out.
+---
+Pancreas
+contents:another_note
+The Internet says the pancreas produces enzymes used to break down food and insulin to regulate sugar in the blood. It kinda looks like corn on the cob. Google image search was not really a great idea.
+---
+===
+Exits:
+Dwayne "The Rock" Johnson's pillow
+s
+Mouth
+---
+Mouth
+w
+Nose
+---
+Mouth
+e
+Windpipe
+---
+Mouth
+s
+Esophagus
+---
+Esophagus
+n
+Mouth
+---
+Esophagus
+s
+Stomach
+---
+Stomach
+e
+Bloodstream
+---
+Stomach
+s
+Small intestine
+---
+Stomach
+n
+Esophagus
+---
+Small intestine
+n
+Stomach
+---
+Small intestine
+s
+Large intestine
+---
+Large intestine
+s
+Porcelain bowl of death
+---
+Windpipe
+w
+Mouth
+---
+Windpipe
+s
+Lungs
+---
+Lungs
+n
+Windpipe
+---
+Lungs
+s
+Heart
+---
+Heart
+s
+Bloodstream
+---
+Heart
+n
+Lungs
+---
+Bloodstream
+n
+Heart
+---
+Bloodstream
+w
+Stomach
+---
+Nostril
+d
+Dwayne "The Rock" Johnson's pillow
+---
+Nose
+w
+Nostril
+---
+Nose
+e
+Mouth
+---
+Porcelain bowl of death
+d
+Dwayne "The Rock" Johnson's pillow
+---
+Tear ducts
+n
+Eyes
+---
+Eyes
+s
+Tear ducts
+---
+Tear ducts
+s
+Nose
+---
+Nose
+n
+Tear ducts
+---
+Stomach
+w
+Pancreas
+---
+Pancreas
+e
+Stomach
+---
+Pancreas
+s
+Gallbladder
+---
+Gallbladder
+n
+Pancreas
+---
+Gallbladder
+s
+Liver
+---
+Liver
+n
+Gallbladder
+---
+Liver
+e
+Small intestine
+---
+Small intestine
+w
+Liver
+---
+Heart
+e
+Kidneys
+---
+Kidneys
+w
+Heart
+---
+Kidneys
+e
+Bladder
+---
+Bladder
+e
+Porcelain bowl of death
+---
+Bloodstream
+s
+????
+---
+????
+n
+Bloodstream
+---
+????
+s
+Brain
+---
+Brain
+n
+????
+---
+===
+NPCs:
+Kevin_Bacon:
+move/follow:0,0
+inventory:bacon_shield,bacon_armor,bacon_sword
+stats:2,2,2
+current room:Stomach
+dialogue:Hello! My name is Kevin. Will you be my friend?
+score:20
+hostility:1.0
+health:
+---
+Tailer_Swift:
+move/follow:0,0
+inventory:
+stats:1,1,2
+current room:????
+dialogue:Meow!
+score:5
+hostility:-1.0
+health:
+---
+Catty_Purry:
+move/follow:0,0
+inventory:
+stats:1,1,2
+current room:????
+dialogue:Hiss!
+score:5
+hostility:-1.0
+health:
+---
+Ted_Mewgent:
+move/follow:0,0
+inventory:
+stats:1,1,2
+current room:????
+dialogue:Hiss!
+score:5
+hostility:-1.0
+health:
+---
+Lick_Jagger:
+move/follow:0,0
+inventory:
+stats:1,1,2
+current room:????
+dialogue:Hiss!
+score:5
+hostility:-1.0
+health:
+---
+David_Litterman:
+move/follow:0,0
+inventory:
+stats:1,1,2
+current room:????
+dialogue:Hiss!
+score:5
+hostility:-1.0
+health:
+---
+Paws_McCartney:
+move/follow:0,0
+inventory:
+stats:1,1,2
+current room:????
+dialogue:Hey, Jude!
+score:5
+hostility:-1.0
+health:
+---
+stomach_acid:
+move/follow:0,0
+inventory:
+stats:9,100,2
+current room:Stomach
+dialogue:Stomach acid can't talk. That would not be very believable.
+score:5
+hostility:-5.0
+health:
+---
+great_yellow_shark:
+move/follow:0,0
+inventory:
+stats:3,3,3
+current room:Bladder
+dialogue:Yellow Shark! doo doo doo doo doo doo! ... Yellow Shark! doo doo doo doo doo doo!
+score:50
+hostility:-10.0
+health:
+---
+Repeated_concussions:
+move/follow:0,0
+inventory:yummy_brain_goodness
+stats:5,9,5
+current room:Brain
+dialogue:Do you know your name? Do you know where you are? Can you count backwards from 10?
+score:100
+hostility:-100.0
+health:
+---
+Dennis_Quaid_in_a_microscopic_submarine:
+move/follow:1,0
+weapon:laser
+armor:tiny_submarine_armor
+stats:3,3,3
+current room:Liver
+dialogue:When things are at their darkest, pal, it's a brave man that can kick back and party.
+score:50
+hostility:-10.0
+health:
+---
+Freddy_Purrcury:
+move/follow:0,0
+inventory:
+stats:1,1,2
+current room:????
+dialogue:Roar!
+score:5
+hostility:-1.0
+health:
+---
+===

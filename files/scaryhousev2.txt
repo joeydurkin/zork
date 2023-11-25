@@ -1,0 +1,21 @@
+You will first have to choose the number of players, choose 1 player. When 
+you are presented with the options of classes to choose from, select bodyguard.
+Your first objective is to find items to defend yourself when you encounter
+NPCs. You will start the dungeon on the front porch. Go east to the garage,
+equip the TrenchCoat, and head east, back to the porch. From the porch, go
+west to the Alley, equip the trashcanlid, and go east, back to the porch once
+again. From the porch, go north to the living room, up to the bedroom, and east 
+to the bathroom. Be careful in this area, as you may encounter the Rat. If you 
+do encounter the rat, you can fight it or simply ignore it and keep moving, the 
+rat won't be able to hurt you very much. Take the painkillers in the bathroom, 
+you may need them to heal later on. Go south to the closet, down to the secret
+office, east to the greenhouse, and east to the backyard. From the backyard, go
+north to the shed, where you will find the LawnMowerBlade. Equip the LawnMowerBlade,
+and go south to the backyard. From the backyard, go east to the field, down to the
+sewer, and south to the deep sewer. Check your inventory to make sure you have the
+TrenchCoat, TrashcanLid, and LawnmowerBlade equipped. It is also wise to check your
+health. If your health is not 100%, swallow the painkillers. Finally, go up to the
+Meeting Room. There will be a hostile MafiaBoss here. The MafiaBoss is a strong NPC,
+but at this point you are well equipped. Attack the MafiaBoss until he dies. When 
+the MafiaBoss is dead, look around and you will see that he dropped a StackOfCash.
+smell the cash, and you will win.

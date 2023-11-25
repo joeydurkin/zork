@@ -1,0 +1,14 @@
+The goal given at the start is to eat a delicious slice of Benny's Pizza. You'll want to
+gear up along the way. 
+NPCs all drop some good items that help in combat. The most notable "puzzle" is getting 
+out of the Dungeon below Citgo (s,d,s,e,e,n,d). To do this, you have to kill the raccoon 
+in the Dumpster you passed along the way, the moldySandwich it drops will teleport you 
+when you eat it. You will be rewarded with the best armor in the game and a healing weapon,
+which will make the rest of the game much easier.
+To get the slice of pizza, go to Benny Vitali's (s,d,s,e,e,e,e,e,s,s). When you eat the
+pizza, which gives you a full restore of health, a mysterious civil war enthusiast hands
+you a note, redefining your goal of victory. To quell your hunger for the heart of the
+Confederacy, you have to backtrack to the Confederate Cemetery you passed along the way.
+Fighting the ghostOfRobertELee is by far the hardest fight, so look out for items that
+can heal you, or bring a friend to keep smacking you with the bullWhip! Once the ghost
+is defeated, eat his heart to win.

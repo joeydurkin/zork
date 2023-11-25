@@ -1,0 +1,78 @@
+The dungeon is designed similar to the human body.
+Here's the quickest way to get to the end.
+
+Start here:
+
+Dwayne "The Rock" Johnson's pillow
+go south
+---
+Mouth
+Go south
+---
+Esophagus
+go south
+---
+Stomach
+paper_clip weapon can be straightened for a more powerful weapon
+antacid can be given to stomach_acid to make it friendly
+A friendly Kevin_Bacon is here. Kill him to get powerful equipment.
+go east to bloodstream
+---
+Bloodstream
+go south to ????
+---
+????
+There are lots of hostile cats in this room
+clean the dirty_litter_box to get the wand of healing
+you can kill the cats or heal them to make them friendly
+go south to Brain
+---
+Brain
+Kill the final boss and he will drop the yummy brain for you to eat and win.
+Tough to kill without weapons
+
+
+
+Other rooms and items of interest/npcs:
+
+Small intestine
+toy_car can be ridden to teleport to a random room
+---
+Large intestine
+This is a dead end trap and sends you to porcelain bowl of death.
+---
+Porcelain bowl of death
+dead end trap sends you back to the beginning.
+---
+Nose
+---
+Windpipe
+---
+Lungs
+---
+Heart
+---
+Nostril
+this is a dead end trap that sends you back to the beginning
+---
+Gallbladder
+---
+Eyes
+---
+Tear ducts
+---
+Kidneys (connected to the heart)
+pull sword_in_the_kidney_stone to get excalibur, the strongest weapon.
+---
+Liver
+Dennis_Quaid_in_a_microscopic_submarine starts here but moves around the dungeon
+---
+Bladder
+There is a hostile great_yellow_shark here
+weaker equipment here: life_preserver,snorkle,pool_noodle
+---
+Pancreas
+another_note is a clue how to get the wand_of_healing
+
+
+
